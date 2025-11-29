@@ -21,6 +21,7 @@ A complete web application to manage pet details such as **add, view, update, an
 
 ## 🛠️ Tech Stack
 
+
 | Technology               | Used For         |
 |--------------------------|------------------|
 | **Java Servlet (Jakarta)** | Backend Logic    |
@@ -29,4 +30,36 @@ A complete web application to manage pet details such as **add, view, update, an
 | **MySQL**                | Data Storage     |
 | **Tomcat 10.1**          | Server Deployment|
 | **Git / GitHub**         | Version Control  |
+
+Project Structure
+
+
+PetManagementSystem/
+│── frontend/
+│   ├── addPet.html
+│   ├── index.html
+│   ├── script.js
+│   ├── style.css
+│   └── viewPets.html
+│
+│── src/
+│   └── com/pet/controller/
+│       ├── PetServlet.java           # Add pet
+│       ├── ViewPetsServlet.java      # Display pets list
+│       ├── UpdatePetServlet.java     # Update pet details
+│       ├── EditPetServlet.java       # Load pet details to edit
+│       └── DeletePetServlet.java     # Delete a pet
+│
+│── WEB-INF/
+│   ├── classes/
+│   │   └── com/pet/controller/
+│   │       ├── PetServlet.class
+│   │       ├── ViewPetsServlet.class
+│   │       ├── UpdatePetServlet.class
+│   │       ├── EditPetServlet.class
+│   │       └── DeletePetServlet.class
+│   ├── lib/                          
+│   └── web.xml                       # Servlet mappings
+│
+└── PetManagementSystem.war           # Deployable WAR file
 
