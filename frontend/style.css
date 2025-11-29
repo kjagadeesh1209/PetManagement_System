@@ -1,0 +1,108 @@
+/* ---------- Global Styling ---------- */
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f6f9fc;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Page Title */
+h1, h2 {
+    color: #222;
+    margin-top: 30px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* ---------- Form Styling ---------- */
+form {
+    margin: 30px auto;
+    width: 350px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+input, button {
+    width: 92%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #bbb;
+    font-size: 15px;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Submit Buttons */
+button {
+    background:#007bff;
+    color: white;
+    border: none;
+    font-size:16px;
+    cursor:pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background:#0056b3;
+}
+
+/* ---------- Table Styling ---------- */
+table {
+    width: 70%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px;
+    font-size: 16px;
+}
+
+th {
+    background:#007bff;
+    color:white;
+}
+
+tr:nth-child(even) { background:#f2f6fc; }
+tr:hover { background:#e8f0ff; }
+
+/* ---------- Action Buttons ---------- */
+a {
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 8px;
+}
+
+a.edit {
+    color:#28a745;
+}
+a.edit:hover {
+    text-decoration: underline;
+}
+
+a.delete {
+    color:#dc3545;
+}
+a.delete:hover {
+    text-decoration: underline;
+}
+
+/* Back link after delete/update */
+.back-link {
+    display:block;
+    margin-top:20px;
+    font-size:18px;
+    color:#007bff;
+}
+.back-link:hover { text-decoration: underline; }

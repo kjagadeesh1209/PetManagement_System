@@ -1,0 +1,53 @@
+<web-app version="5.0">
+
+    <servlet>
+        <servlet-name>PetServlet</servlet-name>
+        <servlet-class>com.pet.controller.PetServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>PetServlet</servlet-name>
+        <url-pattern>/addPet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ViewPetsServlet</servlet-name>
+        <servlet-class>com.pet.controller.ViewPetsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ViewPetsServlet</servlet-name>
+        <url-pattern>/viewPets</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>DeletePetServlet</servlet-name>
+        <servlet-class>com.pet.controller.DeletePetServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeletePetServlet</servlet-name>
+        <url-pattern>/deletePet</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>EditPetServlet</servlet-name>
+        <servlet-class>com.pet.controller.EditPetServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditPetServlet</servlet-name>
+        <url-pattern>/editPet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdatePetServlet</servlet-name>
+        <servlet-class>com.pet.controller.UpdatePetServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdatePetServlet</servlet-name>
+        <url-pattern>/updatePet</url-pattern>
+    </servlet-mapping>
+
+</web-app>
