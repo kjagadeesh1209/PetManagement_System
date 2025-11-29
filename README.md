@@ -30,38 +30,3 @@ A complete web application to manage pet details such as **add, view, update, an
 | **Tomcat 10.1**          | Server Deployment|
 | **Git / GitHub**         | Version Control  |
 
----
-
-## 📂 Project Structure
-
-```bash
-PetManagementSystem/
-├── pom.xml
-├── README.md
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/
-│   │   │       └── petmanagement/
-│   │   │           ├── model/
-│   │   │           │   └── Pet.java
-│   │   │           ├── dao/
-│   │   │           │   └── PetDAO.java
-│   │   │           ├── util/
-│   │   │           │   └── DBUtil.java
-│   │   │           └── servlet/
-│   │   │               ├── AddPetServlet.java
-│   │   │               ├── ListPetsServlet.java
-│   │   │               ├── EditPetServlet.java
-│   │   │               └── DeletePetServlet.java
-│   │   └── webapp/
-│   │       ├── index.jsp
-│   │       ├── add-pet.jsp
-│   │       ├── edit-pet.jsp
-│   │       ├── list-pets.jsp
-│   │       └── assets/
-│   │           ├── css/
-│   │           │   └── style.css
-│   │           └── images/
-│   └── test/ (optional)
-└── target/ (generated after build)
