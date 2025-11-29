@@ -33,33 +33,37 @@ A complete web application to manage pet details such as **add, view, update, an
 
 Project Structure
 
-
-PetManagementSystem/
-│── frontend/
+PetManagementSystem
+│
+├── frontend
 │   ├── addPet.html
 │   ├── index.html
 │   ├── script.js
 │   ├── style.css
 │   └── viewPets.html
 │
-│── src/
-│   └── com/pet/controller/
-│       ├── PetServlet.java           # Add pet
-│       ├── ViewPetsServlet.java      # Display pets list
-│       ├── UpdatePetServlet.java     # Update pet details
-│       ├── EditPetServlet.java       # Load pet details to edit
-│       └── DeletePetServlet.java     # Delete a pet
+├── src
+│   └── com
+│       └── pet
+│           └── controller
+│               ├── PetServlet.java          # Add pet
+│               ├── ViewPetsServlet.java     # View all pets
+│               ├── UpdatePetServlet.java    # Update pet
+│               ├── EditPetServlet.java      # Load data for editing
+│               └── DeletePetServlet.java    # Delete pet
 │
-│── WEB-INF/
-│   ├── classes/
-│   │   └── com/pet/controller/
-│   │       ├── PetServlet.class
-│   │       ├── ViewPetsServlet.class
-│   │       ├── UpdatePetServlet.class
-│   │       ├── EditPetServlet.class
-│   │       └── DeletePetServlet.class
-│   ├── lib/                          
-│   └── web.xml                       # Servlet mappings
+├── WEB-INF
+│   ├── classes
+│   │   └── com
+│   │       └── pet
+│   │           └── controller
+│   │               ├── PetServlet.class
+│   │               ├── ViewPetsServlet.class
+│   │               ├── UpdatePetServlet.class
+│   │               ├── EditPetServlet.class
+│   │               └── DeletePetServlet.class
+│   ├── lib/                   # MySQL JDBC Driver (if added)
+│   └── web.xml                # Servlet mappings
 │
-└── PetManagementSystem.war           # Deployable WAR file
+└── PetManagementSystem.war    # Deployment WAR file
 
